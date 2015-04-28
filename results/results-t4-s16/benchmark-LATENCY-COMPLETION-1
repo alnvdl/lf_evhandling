@@ -1,0 +1,24 @@
+Method: COMPLETION, Measure: LATENCY, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 16 -M 1000 
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at localhost:6633 
+   faking 16 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+02:16:13.719 16  switches: flows/sec:  127105  126223  81320  81846  127104  126222  81319  81845  127104  126221  81319  81846  127104  126221  81318  81845   total = 333.192133 per ms 
+02:16:18.820 16  switches: flows/sec:  77662  77656  68984  68712  76943  73965  48309  46281  60643  50572  39337  39131  39594  39265  38682  38735   total = 176.891476 per ms 
+02:16:23.920 16  switches: flows/sec:  38230  38230  38230  38230  38230  38230  38051  36957  36279  36418  21650  20639  19465  19473  19121  19119   total = 99.308771 per ms 
+02:16:29.020 16  switches: flows/sec:  56018  53860  52119  55681  55165  45826  44281  49561  45366  37409  30688  30105  28734  27997  27939  28013   total = 133.750848 per ms 
+02:16:34.120 16  switches: flows/sec:  39255  39255  38676  38593  39203  38950  36879  36709  37823  36640  26397  21188  19959  19769  19620  19622   total = 101.707559 per ms 
+02:16:39.221 16  switches: flows/sec:  67993  67985  61753  61680  67380  65085  46682  45589  55740  40044  35527  34543  34740  34146  33888  33928   total = 157.339404 per ms 
+02:16:44.321 16  switches: flows/sec:  77824  77097  74873  74084  66478  64229  60709  51502  50634  45707  41222  39982  39784  39439  39296  39324   total = 176.435847 per ms 
+02:16:49.421 16  switches: flows/sec:  70488  68986  71806  71188  54271  52668  63856  53785  43523  42406  39761  37746  36079  35910  36008  36007   total = 162.893723 per ms 
+02:16:54.522 16  switches: flows/sec:  52488  51876  53104  52841  45463  44880  49676  45843  40165  38642  29397  28602  26782  26597  26606  26604   total = 127.912560 per ms 
+02:16:59.622 16  switches: flows/sec:  68472  68346  62422  62506  66863  64723  47957  46517  55746  39825  35802  34687  34875  34417  34180  34229   total = 158.311342 per ms 
+02:17:04.722 16  switches: flows/sec:  41199  41209  41158  41195  41198  41204  41094  40808  39070  33210  23998  22834  21432  21068  20582  20599   total = 106.371430 per ms 
+RESULT: 16 switches 10 tests min/max/avg/stdev = 99308.77/176891.48/140092.30/28786.59 responses/s

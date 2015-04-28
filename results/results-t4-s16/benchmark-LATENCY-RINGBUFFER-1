@@ -1,0 +1,24 @@
+Method: RINGBUFFER, Measure: LATENCY, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 16 -M 1000 
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at localhost:6633 
+   faking 16 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+02:20:52.962 16  switches: flows/sec:  98099  100991  71368  70267  97681  98722  62512  61436  89840  87108  57187  57289  77392  80151  55877  56072   total = 244.396054 per ms 
+02:20:58.062 16  switches: flows/sec:  50113  49338  50059  46412  49883  43867  46901  39336  43738  35290  28531  26665  25856  25488  25079  25054   total = 122.321535 per ms 
+02:21:03.162 16  switches: flows/sec:  90976  90804  76575  72891  89712  84495  52516  49081  67982  53396  45697  45589  46074  45551  45365  45457   total = 200.430717 per ms 
+02:21:08.263 16  switches: flows/sec:  62162  62188  56947  55481  61585  59712  45296  43875  52632  38133  33616  33037  33069  31125  31043  31077   total = 146.192676 per ms 
+02:21:13.363 16  switches: flows/sec:  75404  75274  64524  62493  74649  70812  48423  46419  59142  46134  39098  38753  38739  37758  37634  37688   total = 170.587742 per ms 
+02:21:18.463 16  switches: flows/sec:  83818  83611  71714  69292  83077  78638  51063  46909  62455  50286  42292  42168  42390  41999  41813  41880   total = 186.679208 per ms 
+02:21:23.563 16  switches: flows/sec:  60975  60929  54949  53895  60419  57927  45142  44090  51660  38086  34775  31197  31117  30542  30456  30489   total = 143.328769 per ms 
+02:21:28.664 16  switches: flows/sec:  64006  63978  56112  54584  63394  60999  44551  43200  52922  42378  37212  32597  32450  32137  31931  31987   total = 148.887511 per ms 
+02:21:33.764 16  switches: flows/sec:  34998  34998  34998  34998  34998  34998  34992  34965  34731  34610  30553  19039  17991  17983  17501  17499   total = 93.969479 per ms 
+02:21:38.864 16  switches: flows/sec:  87118  84657  78658  86449  84796  56923  51199  70339  56943  45560  45256  45234  43841  43594  43486  43586   total = 193.526910 per ms 
+02:21:43.964 16  switches: flows/sec:  74459  73343  70477  69090  68148  61563  56363  53943  48802  45219  40908  38531  37686  37319  37208  37245   total = 170.058147 per ms 
+RESULT: 16 switches 10 tests min/max/avg/stdev = 93969.48/200430.72/157598.27/31619.32 responses/s

@@ -1,0 +1,24 @@
+Method: RINGBUFFER, Measure: LATENCY, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 8 -M 1000 
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at localhost:6633 
+   faking 8 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+01:39:00.739 8   switches: flows/sec:  133461  135617  133461  135617  133460  135616  133460  135616   total = 215.261557 per ms 
+01:39:05.839 8   switches: flows/sec:  175018  173297  156957  157159  144947  147657  139553  142906   total = 247.498256 per ms 
+01:39:10.939 8   switches: flows/sec:  174845  173705  159104  158884  145421  147981  139301  142631   total = 248.373953 per ms 
+01:39:16.039 8   switches: flows/sec:  174873  172904  159045  158319  145355  147462  139545  142141   total = 247.928354 per ms 
+01:39:21.139 8   switches: flows/sec:  174920  172796  159314  158369  145452  147483  139449  142179   total = 247.991706 per ms 
+01:39:26.240 8   switches: flows/sec:  174662  172064  158907  157329  144873  146456  139031  141200   total = 246.903906 per ms 
+01:39:31.340 8   switches: flows/sec:  174191  172285  159408  158103  144348  146284  138360  141045   total = 246.804603 per ms 
+01:39:36.440 8   switches: flows/sec:  174495  171999  159237  157691  144628  146278  138521  140964   total = 246.762255 per ms 
+01:39:41.540 8   switches: flows/sec:  174524  173296  160970  160100  145582  147835  139418  142494   total = 248.843452 per ms 
+01:39:46.640 8   switches: flows/sec:  174278  172440  160880  159359  145332  147213  139211  141793   total = 248.100952 per ms 
+01:39:51.741 8   switches: flows/sec:  174193  172197  160208  158601  144430  146182  138199  140872   total = 246.976351 per ms 
+RESULT: 8 switches 10 tests min/max/avg/stdev = 246762.25/248843.45/247618.38/698.02 responses/s

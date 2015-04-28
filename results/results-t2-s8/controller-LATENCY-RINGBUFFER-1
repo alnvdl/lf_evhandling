@@ -1,0 +1,37 @@
+Method: RINGBUFFER, Measure: LATENCY, run 1
+Server running (0.0.0.0:6633)
+Running with RINGBUFFER event handling
+l2 application (RawLearningSwitch) started
+Running with 2 threads
+Connection id=0 started
+Connection id=1 started
+Connection id=2 started
+Connection id=3 started
+Connection id=4 started
+Connection id=5 started
+Connection id=6 started
+Connection id=7 started
+Connection id=1 established
+Connection id=0 established
+Connection id=3 established
+Connection id=2 established
+Connection id=4 established
+Connection id=5 established
+Connection id=6 established
+Connection id=7 established
+Connection id=0 closed by the user
+Connection id=1 closed by the user
+Deleting L2 entries for connection id=0
+Deleting L2 entries for connection id=1
+Connection id=3 closed by the user
+Deleting L2 entries for connection id=3
+Connection id=2 closed by the user
+Deleting L2 entries for connection id=2
+Connection id=5 closed by the user
+Connection id=4 closed by the user
+Deleting L2 entries for connection id=5
+Deleting L2 entries for connection id=4
+Connection id=7 closed by the user
+Connection id=6 closed by the user
+Deleting L2 entries for connection id=7
+Deleting L2 entries for connection id=6

@@ -1,0 +1,24 @@
+Method: COMPLETION, Measure: LATENCY, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 16 -M 1000 
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at localhost:6633 
+   faking 16 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+01:06:27.043 16  switches: flows/sec:  38500  38500  38499  38499  38499  38499  38499  38500  38500  38500  38500  38500  38499  38499  38499  38499   total = 123.198175 per ms 
+01:06:32.143 16  switches: flows/sec:  47211  47211  47211  47211  47211  47211  47211  47211  47210  46847  44148  45283  44234  40368  43723  45031   total = 146.906253 per ms 
+01:06:37.243 16  switches: flows/sec:  47157  47157  47156  47156  47156  47156  47156  47156  47156  44640  42600  44312  45756  44708  42111  45441   total = 146.794712 per ms 
+01:06:42.344 16  switches: flows/sec:  47351  47351  47351  47350  47350  47350  47350  47350  47350  47350  43263  46115  47108  44075  41485  41499   total = 147.409512 per ms 
+01:06:47.444 16  switches: flows/sec:  47229  47229  47229  47229  47228  47228  47228  47228  47199  45555  46418  43398  45873  43424  40052  44979   total = 146.945082 per ms 
+01:06:52.544 16  switches: flows/sec:  47431  47431  47431  47431  47431  47431  47431  47430  47430  47127  43812  46007  45399  42399  46043  40878   total = 147.708370 per ms 
+01:06:57.644 16  switches: flows/sec:  47112  47112  47112  47112  47112  46519  47111  47111  47111  45657  42002  42359  45463  43236  44252  46516   total = 146.579341 per ms 
+01:07:02.745 16  switches: flows/sec:  47332  47332  47332  47332  47332  47332  47332  47332  47331  46077  47277  42028  44433  45844  40294  44985   total = 147.384882 per ms 
+01:07:07.845 16  switches: flows/sec:  47323  47323  47323  47323  47323  47323  47322  47322  47321  46374  47094  42224  44773  43085  43034  43668   total = 147.230971 per ms 
+01:07:12.945 16  switches: flows/sec:  47238  47238  47238  47238  47238  47238  47237  47237  47237  47157  47237  41097  45739  43190  43201  42552   total = 147.062371 per ms 
+01:07:18.045 16  switches: flows/sec:  46977  46977  46977  46977  46976  46976  46976  46976  46976  43269  46975  42754  43602  45562  42716  43739   total = 146.280971 per ms 
+RESULT: 16 switches 10 tests min/max/avg/stdev = 146280.97/147708.37/147030.25/401.70 responses/s

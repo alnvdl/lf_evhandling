@@ -1,0 +1,24 @@
+Method: RINGBUFFER, Measure: LATENCY, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 8 -M 1000 
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at localhost:6633 
+   faking 8 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+02:13:54.283 8   switches: flows/sec:  130059  126065  80533  78705  92932  91407  74596  74137   total = 149.686620 per ms 
+02:13:59.384 8   switches: flows/sec:  105163  96443  90223  79087  79968  85154  80581  74403   total = 138.203930 per ms 
+02:14:04.484 8   switches: flows/sec:  107486  96903  86793  74699  73583  78873  76706  70785   total = 133.164694 per ms 
+02:14:09.584 8   switches: flows/sec:  121250  79912  65971  61414  62836  61279  61136  61177   total = 114.994563 per ms 
+02:14:14.684 8   switches: flows/sec:  127166  74334  75085  68154  72996  66868  69765  66188   total = 124.110877 per ms 
+02:14:19.785 8   switches: flows/sec:  132918  83737  90254  76415  85249  73698  80596  72017   total = 138.975966 per ms 
+02:14:24.885 8   switches: flows/sec:  115314  77550  75410  69896  64788  62293  63362  62904   total = 118.303069 per ms 
+02:14:29.985 8   switches: flows/sec:  101558  86405  83339  73717  71284  74572  72605  69331   total = 126.562124 per ms 
+02:14:35.085 8   switches: flows/sec:  116148  83330  64667  70463  62694  60717  59434  60136   total = 115.516991 per ms 
+02:14:40.185 8   switches: flows/sec:  116421  80694  62645  67546  61340  58420  58163  58213   total = 112.687904 per ms 
+02:14:45.286 8   switches: flows/sec:  117559  72580  64241  66214  63259  60136  60014  60045   total = 112.808923 per ms 
+RESULT: 8 switches 10 tests min/max/avg/stdev = 112687.90/138975.97/123532.90/9762.87 responses/s

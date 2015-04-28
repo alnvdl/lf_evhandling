@@ -1,0 +1,24 @@
+Method: RINGBUFFER, Measure: LATENCY, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 8 -M 1000 
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at localhost:6633 
+   faking 8 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+22:05:23.788 8   switches: flows/sec:  110215  67227  58404  57949  57356  57638  57243  57463   total = 104.698539 per ms 
+22:05:28.888 8   switches: flows/sec:  105427  69702  57528  57196  56963  56874  56887  56865   total = 103.488027 per ms 
+22:05:33.988 8   switches: flows/sec:  95913  75843  65457  50585  48852  48801  48777  48736   total = 96.592510 per ms 
+22:05:39.089 8   switches: flows/sec:  107310  73669  56567  56181  55966  55948  55912  55938   total = 103.497869 per ms 
+22:05:44.189 8   switches: flows/sec:  92882  81262  61385  51728  47551  47502  47492  47480   total = 95.455598 per ms 
+22:05:49.289 8   switches: flows/sec:  104248  70121  61744  57343  55022  54783  54648  54549   total = 102.491047 per ms 
+22:05:54.389 8   switches: flows/sec:  107929  67468  58112  57670  57440  57398  57329  57278   total = 104.123884 per ms 
+22:05:59.490 8   switches: flows/sec:  100783  71954  60525  57700  52444  52390  52397  52344   total = 100.106699 per ms 
+22:06:04.590 8   switches: flows/sec:  105858  69604  57375  57116  57008  56950  56920  56897   total = 103.544834 per ms 
+22:06:09.690 8   switches: flows/sec:  96490  76618  60374  56857  50143  50097  50076  50082   total = 98.147164 per ms 
+22:06:14.790 8   switches: flows/sec:  95827  79587  52798  50274  50048  50004  49964  49984   total = 95.696741 per ms 
+RESULT: 8 switches 10 tests min/max/avg/stdev = 95455.60/104123.88/100314.44/3367.72 responses/s

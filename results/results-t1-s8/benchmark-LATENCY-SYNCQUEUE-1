@@ -1,0 +1,24 @@
+Method: SYNCQUEUE, Measure: LATENCY, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 8 -M 1000 
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at localhost:6633 
+   faking 8 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+01:01:47.956 8   switches: flows/sec:  73234  73234  73234  73234  73234  73233  73233  73232   total = 117.173553 per ms 
+01:01:53.057 8   switches: flows/sec:  91016  91016  91015  82522  81362  78414  88266  79101   total = 136.542373 per ms 
+01:01:58.157 8   switches: flows/sec:  90433  90432  90433  82025  79432  81143  81686  82748   total = 135.666346 per ms 
+01:02:03.257 8   switches: flows/sec:  90676  90676  85373  80232  90676  81508  76754  84292   total = 136.037346 per ms 
+01:02:08.357 8   switches: flows/sec:  90955  86314  87023  88295  81198  84707  86073  77748   total = 136.462573 per ms 
+01:02:13.458 8   switches: flows/sec:  90776  90775  90775  89314  78114  77304  77393  86498   total = 136.189718 per ms 
+01:02:18.558 8   switches: flows/sec:  90629  90628  90627  80826  86430  78656  79824  82249   total = 135.973773 per ms 
+01:02:23.658 8   switches: flows/sec:  90603  90603  90602  86745  79030  83583  80855  77640   total = 135.932173 per ms 
+01:02:28.758 8   switches: flows/sec:  90048  90047  90046  76250  82803  78975  90047  77273   total = 135.097773 per ms 
+01:02:33.859 8   switches: flows/sec:  90680  90467  83629  87143  81936  85566  84038  76772   total = 136.046173 per ms 
+01:02:38.959 8   switches: flows/sec:  89815  80570  82040  86263  88497  83426  80474  82651   total = 134.747065 per ms 
+RESULT: 8 switches 10 tests min/max/avg/stdev = 134747.07/136542.37/135869.53/536.46 responses/s

@@ -1,0 +1,24 @@
+Method: SYNCQUEUE, Measure: THROUGHPUT, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 8 -M 1000 -t
+cbench: controller benchmarking tool
+   running in mode 'throughput'
+   connecting to controller at localhost:6633 
+   faking 8 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+02:10:25.378 8   switches: flows/sec:  2961209  4639570  3061910  4628980  2960409  4639170  3061711  4628780   total = 6116.307432 per ms 
+02:10:30.487 8   switches: flows/sec:  4153646  4341973  3309358  3349543  4153247  4341574  3296061  3349143   total = 6058.832659 per ms 
+02:10:35.592 8   switches: flows/sec:  4667725  4595595  3261158  2719445  4667476  4595446  3260756  2719046   total = 6097.296475 per ms 
+02:10:40.697 8   switches: flows/sec:  4680618  4009305  2970685  2689274  4680215  4009104  2969985  2688675   total = 5739.512509 per ms 
+02:10:45.803 8   switches: flows/sec:  4713673  4650547  2373174  3851939  4713272  4650147  2372974  3851539   total = 6235.097599 per ms 
+02:10:50.908 8   switches: flows/sec:  4628963  4267317  2717297  2909892  4628614  4266967  2717097  2909493   total = 5809.104764 per ms 
+02:10:56.013 8   switches: flows/sec:  4668540  4561445  3250512  2666297  4668141  4561050  3250526  2666097   total = 6058.429512 per ms 
+02:11:01.118 8   switches: flows/sec:  4670498  4575608  3262706  2669893  4670099  4575409  3262505  2669494   total = 6071.066339 per ms 
+02:11:06.223 8   switches: flows/sec:  4600981  4441757  3293321  2698889  4600582  4441557  3293071  2698490   total = 6013.635787 per ms 
+02:11:11.328 8   switches: flows/sec:  4678896  4568005  3288873  2677685  4678498  4567605  3288074  2677285   total = 6084.944039 per ms 
+02:11:16.434 8   switches: flows/sec:  3445331  4668736  2661794  4620387  3445132  4668337  2661694  4619988   total = 6158.249009 per ms 
+RESULT: 8 switches 10 tests min/max/avg/stdev = 5739512.51/6235097.60/6032616.87/142395.05 responses/s

@@ -1,0 +1,24 @@
+Method: SYNCQUEUE, Measure: LATENCY, run 1
+$ cbench -c localhost -p 6633 -m 5000 -l 11 -s 8 -M 1000 
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at localhost:6633 
+   faking 8 switches offset 1 :: 11 tests each; 5000 ms per test
+   with 1000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+02:11:34.562 8   switches: flows/sec:  127533  116699  130221  125894  101738  97890  110156  108635   total = 183.752281 per ms 
+02:11:39.662 8   switches: flows/sec:  115006  97556  93686  91025  86499  86430  85380  84215   total = 147.959163 per ms 
+02:11:44.763 8   switches: flows/sec:  111494  87886  69099  70687  66934  64407  62239  61236   total = 118.795901 per ms 
+02:11:49.863 8   switches: flows/sec:  110295  70915  71339  62630  60995  58023  57309  57970   total = 109.894585 per ms 
+02:11:54.963 8   switches: flows/sec:  90824  73921  71425  69031  68636  69155  67927  68101   total = 115.803004 per ms 
+02:12:00.063 8   switches: flows/sec:  117374  90201  65949  62529  61251  59077  58023  58846   total = 114.648945 per ms 
+02:12:05.163 8   switches: flows/sec:  111575  82373  69901  63562  59232  56272  55183  55983   total = 110.815845 per ms 
+02:12:10.264 8   switches: flows/sec:  108583  87577  81901  74987  64169  65166  59670  63624   total = 121.135327 per ms 
+02:12:15.364 8   switches: flows/sec:  109504  112807  64450  63136  59406  61016  57870  59973   total = 117.632188 per ms 
+02:12:20.464 8   switches: flows/sec:  122665  121555  87442  78633  83900  84839  77477  72404   total = 145.782738 per ms 
+02:12:25.564 8   switches: flows/sec:  135038  98112  101327  82599  93385  77982  84964  74889   total = 149.658961 per ms 
+RESULT: 8 switches 10 tests min/max/avg/stdev = 109894.58/149658.96/125212.67/15150.78 responses/s
